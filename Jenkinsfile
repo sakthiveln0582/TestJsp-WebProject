@@ -1,7 +1,5 @@
-pipeline {
-    agent any
-	node {    
-    def tomcatWeb = 'C:\\Tomcat-8.5.75\\webapps'
+    node {    
+    	def tomcatWeb = 'C:\\Tomcat-8.5.75\\webapps'
 	def tomcatBin = 'C:\\Tomcat-8.5.75\\bin'
 	def tomcatStatus = ''
     
@@ -22,4 +20,3 @@ pipeline {
     }
     
     }
-}
