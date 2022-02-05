@@ -11,7 +11,7 @@
 		bat="${mvnHome}/bin/mvn package"        
     }
 	stage('Deploy to Tomcat') {
-		bat="copy target\\TestJsp-WebProject.war \"${tomcatWeb}\\TestJsp-WebProject.war""        
+		bat="copy target\\TestJsp-WebProject.war ${tomcatWeb}\\TestJsp-WebProject.war"        
     }
 	stage('Start Tomcat Server') {
         sleep(time:5,unit:"SECONDS")
